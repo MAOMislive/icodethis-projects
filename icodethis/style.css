@@ -1,0 +1,195 @@
+/* Add CSS here */
+body{
+    background-color: #F2F2F2; font-family: 'Montserrat';
+}
+.div-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: none; 
+    width: 800px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 15px rgba(94, 94, 94, 0.3);
+}
+.div-2{
+    padding: 4rem;
+}
+.header{
+    text-align: center;
+    color: #8B97A7;
+    font-weight: 700;
+    font-size: 27px;
+    margin: 0;
+    padding: 0;
+}
+.header-extra{
+    text-align: center;
+    color: #8B97A7;
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-top: 7px;
+}
+.solid{
+    border-top: 0.5px solid #f2f2f296;
+}
+.question-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #454545;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.question{
+    font-size: 24px;
+    font-weight: 400;
+}
+.main-part{
+    display: inline-block; 
+    padding: 0 12px;
+}
+
+.input-total, .input-percent{
+    color: #788ff7;
+    width: 75px;
+    border: none;
+    border-bottom: solid 2px;
+    font-weight: 500;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    text-align: center;
+    direction: rtl;
+    padding-top: 0;
+    border-top: 0;
+}
+.input-total:focus, .input-percent:focus {
+    outline:none;
+    border-bottom: solid 2px #788ff7;
+}
+.calculate-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculate{
+    margin-bottom: 50px;
+    padding: 10px 50px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    border: none;
+    line-height: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #8E9FEE;
+}
+.calculate:hover{
+    background-color: #788ff7;
+}
+.footer{
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    color: #8B97A7;
+    font-size: 15px;
+}
+.hyperlink-text{
+    color: #8E9FEE;
+    text-decoration-line: underline;
+    display: inline-block;
+    text-align: center;
+}
+.hyperlink-text:hover{
+    color: #788ff7;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 350px) {
+    body{
+        font-size:10px;
+    }
+    .div-2{
+        padding: 2rem;
+    }
+    .header{
+        font-weight: 600;
+        font-size: 1.75rem;
+    }
+    .header-extra{
+        font-size: 1rem; margin-top: 0.75rem;
+    }
+    .question{
+        font-size: 1.5rem;
+    }
+    .main-part{
+        display: block;
+    }
+    .input-total, .input-percent{
+        width: 40px;
+    }
+    .input-percent, .input-total{
+        margin: 0 auto;
+        font-size: 1.25rem;
+    }
+    .question-section{
+        display: block;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .footer{
+        font-size: 0.75rem;
+        max-width: 10rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) and (min-width: 350px) {
+    body{
+        font-size:10px;
+    }
+    .div-2{
+        padding: 2rem 2rem 2.5rem 2rem;
+    }
+    .header{
+        font-weight: 600;
+        font-size: 1.75rem;
+    }
+    .header-extra{
+        font-size: 1rem; margin-top: 0.75rem;
+    }
+    .question{
+        font-size: 1.5rem;
+    }
+    .main-part{
+        display: block;
+    }
+    .input-total, .input-percent{
+        width: 40px;
+    }
+    .question-section{
+        display: block;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .input-percent, .input-total{
+        margin: 0 auto;
+        font-size: 1.25rem;
+    }
+    .footer{
+        font-size: 0.75rem;
+        max-width: 10rem;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    div-1{
+        width: 400px;
+    }
+}
