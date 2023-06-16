@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .button-container {
+      background-color: #FAFAFE;
+      padding: 6px 5px;
+      margin: 15px;
+      border-radius: 5px;
+      border: solid 1px #DADCF2;
+      font-size: 14px;
+      color: #121b22;
+      font-weight: 500;
+    }
+
+    .button-container:hover {
+      background-color: #656EFF;
+      color: white;
+    }
+
+    .button-container.active {
+      background-color: #656EFF;
+      color: white;
+      box-shadow: 0 9px 10px rgba(101, 110, 255, 0.2);
+    }
+
+    .button {
+      display: block;
+      padding: 12px 35px 12px 20px;
+    }
+  </style>
+</head>
+
+<body class="flex justify-center items-center min-h-screen ">
+  <div class="div-container">
+    <div class="minimize-container"><button class="minimize" id="minimize-button"> ━━ </button></div>
+    <div class="container">
+      <div class="content-container">
+        <div class="title-container" id="title-container">
+          <p>Why did you came to our support site today?</p>
+        </div>
+        <div class="issue-submit-container">
+          <div class="button-container" id="button-container1"><button class="button">I found some bugs and I want to report them.</button></div>
+          <div class="button-container" id="button-container2"><button class="button">I can't post to the forum.</button></div>
+
+          <div class="button-container active" id="button-container3"><button class="button">I have in-game purchasing issues.</button></div>
+
+          <script>
+            $(document).ready(function() {
+              $('.button-container').click(function() {
+                if ($(this).hasClass('active')) {
+                  $(this).removeClass('active');
+                } else {
+                  $('.button-container').removeClass('active');
+                  $(this).addClass('active');
+                }
+              });
+            });
+          </script>
+
+          <div><button class="button submit-button">SUBMIT</button></div>
+        </div>
+      </div>
+
+    </div>
+    <div>
+</body>
+
+</html>
